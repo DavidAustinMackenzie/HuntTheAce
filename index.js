@@ -40,6 +40,7 @@ function createCard(cardItem){
     //assign class to front image element of front of card
     addClassToElement(cardBackElem,'card-img')
 
+    //test
 
 }
 
