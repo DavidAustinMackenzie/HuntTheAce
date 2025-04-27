@@ -89,7 +89,7 @@ function addSrcToImageElemt(imgElem,src){
 }
 
 function addChildElement(parentElem,childElem){
-    parentElem.appendChile(childElem)
+    parentElem.appendChild(childElem)
 }
 
 function addCardToGridCell(card)
