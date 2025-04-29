@@ -9,6 +9,8 @@ const cardBackImgPath = '/images/card-back-blue.png'
 
 const cardContainerElem = document.querySelector('.card-container')
 
+createCards()
+
 function createCards()
 {
     cardObjectDefinitions.forEach((cardItem)=>{
@@ -16,7 +18,8 @@ function createCards()
     })
 }
 
-function createCard(cardItem){
+function createCard(cardItem)
+{
     //create div elements that make up a card
     const cardElem = createElement('div')
     const cardInnerElem = createElement('div')
@@ -72,15 +75,18 @@ function createCard(cardItem){
 
 }
 
-function createElement(elemType){
+function createElement(elemType)
+{
     return document.createElement(elemType)
 }
 
-function addClassToElement(elem, className){
+function addClassToElement(elem, className)
+{
     elem.classList.add(className)
 }
 
-function addIdToElement(elem,id){
+function addIdToElement(elem,id)
+{
     elem.id = id
 }
 
@@ -88,7 +94,8 @@ function addSrcToImageElemt(imgElem,src){
     imgElem.src = src
 }
 
-function addChildElement(parentElem,childElem){
+function addChildElement(parentElem,childElem)
+{
     parentElem.appendChild(childElem)
 }
 
@@ -101,7 +108,8 @@ function addCardToGridCell(card)
     addChildElement(cardPosElem,card)
 }
 
-function mapCardToGridCell(card){
+function mapCardToGridCell(card)
+{
     if(card.id == 1)
     {
         return '.card-pos-a'
